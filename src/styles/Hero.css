@@ -1,0 +1,254 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(74, 63, 55, 0.3) 0%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(74, 63, 55, 0.4) 100%);
+}
+
+.hero-content {
+    z-index: 1;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+/* Bismillah Arabic text */
+.bismillah {
+    font-family: 'Amiri', serif;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.save-the-date {
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.couple-names {
+    font-family: var(--font-script);
+    font-size: 5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Date Badge */
+.date-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    border-radius: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.date-day {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.date-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.date-month {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.date-year {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.scroll-indicator span {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.mouse {
+    width: 26px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    position: relative;
+}
+
+.wheel {
+    width: 4px;
+    height: 8px;
+    background: var(--white);
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(15px);
+    }
+}
+
+/* Animations */
+.animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-content.loaded .animate-up {
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s !important;
+}
+
+.delay-2 {
+    animation-delay: 0.4s !important;
+}
+
+.delay-3 {
+    animation-delay: 0.6s !important;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bismillah {
+        font-size: 1.3rem;
+    }
+
+    .couple-names {
+        font-size: 3.5rem;
+    }
+
+    .save-the-date {
+        font-size: 0.85rem;
+        letter-spacing: 4px;
+    }
+
+    .date-badge {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .date-day {
+        font-size: 2rem;
+    }
+
+    .scroll-indicator {
+        bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .couple-names {
+        font-size: 2.8rem;
+    }
+
+    .bismillah {
+        font-size: 1.1rem;
+    }
+}

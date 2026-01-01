@@ -1,0 +1,90 @@
+.floral-decoration {
+    position: absolute;
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0.9;
+}
+
+.floral-decoration img {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.floral-decoration.top-left {
+    top: 0;
+    left: 0;
+}
+
+.floral-decoration.top-right {
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.floral-decoration.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.floral-decoration.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+/* Size variations */
+.floral-decoration.large img {
+    width: 280px;
+}
+
+.floral-decoration.small img {
+    width: 150px;
+}
+
+/* Animation */
+.floral-decoration {
+    animation: floralFade 1.5s ease-out forwards;
+}
+
+@keyframes floralFade {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 0.9;
+    }
+}
+
+.floral-decoration.top-right {
+    animation: floralFadeRight 1.5s ease-out forwards;
+}
+
+@keyframes floralFadeRight {
+    from {
+        opacity: 0;
+        transform: scaleX(-1) scale(0.8);
+    }
+
+    to {
+        opacity: 0.9;
+        transform: scaleX(-1);
+    }
+}
+
+@media (max-width: 768px) {
+    .floral-decoration img {
+        width: 120px;
+    }
+
+    .floral-decoration.large img {
+        width: 160px;
+    }
+
+    .floral-decoration.small img {
+        width: 80px;
+    }
+}

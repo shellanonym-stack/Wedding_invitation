@@ -1,0 +1,133 @@
+.footer {
+    background: linear-gradient(180deg, var(--text-heading) 0%, #2c241f 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+}
+
+.footer-floral {
+    width: 150px;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    opacity: 0.7;
+    filter: brightness(1.5);
+}
+
+.thank-you {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.couple-script {
+    font-family: var(--font-script);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.footer-quote {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-quote p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.8;
+    opacity: 0.9;
+    margin-bottom: 0.75rem;
+}
+
+.quote-source {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+}
+
+.footer-message {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.85;
+}
+
+.footer-hearts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-hearts svg {
+    animation: pulse 2s infinite;
+}
+
+.footer-hearts svg:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.footer-hearts svg:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .couple-script {
+        font-size: 2.5rem;
+    }
+
+    .footer-quote {
+        padding: 1.25rem;
+        margin: 0 1rem 2rem;
+    }
+
+    .footer-quote p {
+        font-size: 0.9rem;
+    }
+}
