@@ -38,7 +38,7 @@ const Hero = () => {
             <div className={`hero-content ${isLoaded ? 'loaded' : ''}`}>
                 <div className="bismillah animate-up">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
                 <p className="save-the-date animate-up delay-1">The Wedding of</p>
-                <h1 className="couple-names animate-up delay-2">Edo Irawan & Siti</h1>
+                <h1 className="couple-names animate-up delay-2">Edo Irawan <p> & </p> Siti Markonah</h1>
                 <div className="date-badge animate-up delay-3">
                     <span className="date-day">31</span>
                     <div className="date-details">

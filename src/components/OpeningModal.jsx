@@ -34,7 +34,7 @@ const OpeningModal = ({ onOpen }) => {
             <div className="modal-bg">
                 {/* Use the same hero bg or specific cover bg */}
                 <img
-                    src="/assets/gambar/hero-bg.jpg"
+                    src="src/assets/gambar/hero-bg.png"
                     alt="Cover Background"
                     onError={(e) => {
                         e.target.src = "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80";
