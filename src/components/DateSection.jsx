@@ -63,7 +63,7 @@ const DateSection = () => {
                             <Calendar className="icon" />
                             <div className="date-text">
                                 <span className="date-day-name">Minggu</span>
-                                <span className="date-full">25 Januari 2026</span>
+                                <span className="date-full">08 Februari 2026</span>
                             </div>
                         </div>
                         <div className="date-separator">
@@ -73,7 +73,7 @@ const DateSection = () => {
                             <Clock className="icon" />
                             <div className="date-text">
                                 <span className="date-day-name">Pukul</span>
-                                <span className="date-full">08:00 WIB - Selesai</span>
+                                <span className="date-full">09:00 WIB - Selesai</span>
                             </div>
                         </div>
                     </div>

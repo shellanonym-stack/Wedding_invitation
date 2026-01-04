@@ -4,8 +4,8 @@ import { Send, CheckCircle, Mail, User, Users, MessageSquare } from 'lucide-reac
 import floralDivider from '../assets/gambar/floral-divider.png';
 
 // GANTI EMAIL_ADDRESS dengan email tujuan RSVP
-const EMAIL_ADDRESS = 'rsvp@example.com';
-const COUPLE_NAMES = 'Romeo & Juliet';
+const EMAIL_ADDRESS = 'edoirawwan0108@gmail.com';
+const COUPLE_NAMES = 'Edo Irawan & S Qhori Rafni Rivani';
 
 const RSVP = () => {
     const [formData, setFormData] = useState({

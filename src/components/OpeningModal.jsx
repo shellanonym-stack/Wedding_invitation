@@ -5,7 +5,7 @@ import floralImg from '../assets/gambar/floral-corner.png'; // Re-use existing a
 
 const OpeningModal = ({ onOpen }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [guestName, setGuestName] = useState('Tamu Undangan Di Tempat');
+    const [guestName, setGuestName] = useState('Di Tempat');
 
     useEffect(() => {
         // Get guest name from URL parameter "?to=Name"
@@ -51,10 +51,10 @@ const OpeningModal = ({ onOpen }) => {
 
             <div className="modal-content">
                 <div className="opening-title">The Wedding of</div>
-                <h1 className="opening-couple">Edo Irawan <p>&</p> Siti Markonah</h1>
+                <h1 className="opening-couple">Edo Irawan <p>&</p>S Qhori Rafni Rivani</h1>
 
                 <div className="guest-info">
-                    <div className="guest-label">Kepada Yth. Bapak/Ibu/Saudara/i</div>
+                    <div className="guest-label">Kepada Yth. Bapak/Ibu/Saudara/i Tamu Undangan</div>
                     <div className="guest-name">{guestName}</div>
                     <div className="guest-label" style={{ fontSize: '0.8rem', fontStyle: 'italic' }}>
                         Mohon maaf apabila ada kesalahan penulisan

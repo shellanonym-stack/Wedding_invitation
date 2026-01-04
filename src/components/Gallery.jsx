@@ -5,11 +5,10 @@ import floralDivider from '../assets/gambar/floral-divider.png';
 
 // Using local images - place your images in assets/gambar folder
 const photos = [
-    { id: 1, src: 'src/assets/gambar/gallery-1.jpg', alt: 'Moment 1' },
-    { id: 2, src: 'src/assets/gambar/gallery-2.jpg', alt: 'Moment 2' },
-    { id: 3, src: 'src/assets/gambar/gallery-3.jpg', alt: 'Moment 3' },
-    { id: 4, src: 'src/assets/gambar/gallery-4.jpg', alt: 'Moment 4' },
-    { id: 5, src: 'src/assets/gambar/gallery-5.jpg', alt: 'Moment 5' },
+    { id: 1, src: 'src/assets/gambar/gallery1.jpg', alt: 'Moment 1' },
+    { id: 2, src: 'src/assets/gambar/gallery2.jpg', alt: 'Moment 2' },
+    { id: 3, src: 'src/assets/gambar/gallery3.jpg', alt: 'Moment 3' },
+    { id: 5, src: 'src/assets/gambar/gallery5.jpg', alt: 'Moment 5' },
 ];
 
 const Gallery = () => {

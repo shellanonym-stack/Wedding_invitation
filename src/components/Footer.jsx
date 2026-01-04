@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container">
                 <img src={floralDivider} alt="" className="footer-floral" />
                 <p className="thank-you">Terima Kasih</p>
-                <p className="couple-script">Edo Irawan & Siti</p>
+                <p className="couple-script">Edo Irawan & S Qhori Rafni Rivani</p>
                 <div className="footer-quote">
                     <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang."</p>
                     <span className="quote-source">— Q.S. Ar-Rum: 21</span>
